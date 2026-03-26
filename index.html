@@ -3,116 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday ❤️</title>
+  <title>Gaurav Koli | Portfolio</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ff758c, #ff7eb3);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
     }
 
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-      max-width: 350px;
+    header {
       text-align: center;
-      z-index: 2;
+      padding: 60px 20px;
     }
 
     h1 {
-      color: #ff4d6d;
-      font-size: 24px;
+      font-size: 36px;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 16px;
+      color: #94a3b8;
     }
 
-    button {
-      margin-top: 20px;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 10px;
-      background: #ff4d6d;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
-    .hidden {
-      display: none;
-      margin-top: 20px;
-      font-size: 18px;
-      line-height: 1.5;
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
 
-    .heart {
-      position: absolute;
-      color: red;
-      animation: float 5s linear infinite;
-      font-size: 20px;
+    .skills span {
+      display: inline-block;
+      background: #334155;
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin: 5px;
     }
 
-    @keyframes float {
-      0% {
-        transform: translateY(100vh) scale(0.5);
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-10vh) scale(1);
-        opacity: 0;
-      }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #64748b;
     }
   </style>
 </head>
 <body>
 
+<header>
+  <h1>Hi, I'm Gaurav 👋</h1>
+  <p>.NET Backend Developer | Building scalable APIs & systems</p>
+</header>
+
+<section class="section">
   <div class="card">
-    <h1>Happy Birthday Pooja ❤️</h1>
-    <p>You make my world more beautiful every day 🌸</p>
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate .NET developer with experience in building APIs, working with databases, and solving real-world problems.
+      I enjoy writing clean code and continuously improving my skills.
+    </p>
+  </div>
 
-    <button onclick="startSurprise()">Tap for Surprise 🎁</button>
-
-    <div id="message" class="hidden">
-      💖 You are the most special person in my life 💖<br>
-      💍 I feel lucky to have you as my partner 💍<br><br>
-      🌟 I promise to always support, respect and love you 🌟<br><br>
-      🎉 Happy Birthday once again, my future wife 🎉
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>.NET Core</span>
+      <span>C#</span>
+      <span>SQL Server</span>
+      <span>Web API</span>
+      <span>Azure</span>
+      <span>JavaScript</span>
     </div>
   </div>
-  <script>
-    function startSurprise() {
-      document.getElementById('message').style.display = 'block';
-      document.getElementById('music').play();
-      createHearts();
-    }
 
-    function createHearts() {
-      setInterval(() => {
-        const heart = document.createElement('div');
-        heart.classList.add('heart');
-        heart.innerHTML = '❤️';
-        heart.style.left = Math.random() * 100 + 'vw';
-        heart.style.fontSize = Math.random() * 20 + 10 + 'px';
-        document.body.appendChild(heart);
+  <div class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li>🔹 File Search System (Keyword search across files)</li>
+      <li>🔹 API Integration System</li>
+      <li>🔹 Document Processing Tool</li>
+    </ul>
+  </div>
 
-        setTimeout(() => {
-          heart.remove();
-        }, 5000);
-      }, 300);
-    }
-  </script>
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: your-email@example.com</p>
+    <p>GitHub: <a href="#">https://github.com/yourusername</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Gaurav Koli. Built with ❤️
+</footer>
 
 </body>
 </html>
